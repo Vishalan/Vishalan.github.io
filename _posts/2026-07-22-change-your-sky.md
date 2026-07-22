@@ -77,4 +77,4 @@ By the end, the World Cup had quietly become the spine of the trip. I had follow
 
 Seneca was half right. A change of sky will not save a man who travels to run away. But for the one who travels to wake up, the sky was never the point. It is only the thing that finally gets you to change your soul.
 
-Six years was too long to wait for that. The next time, I won't.
+It had been six years since I last looked up. I don't plan to leave it that long again.
