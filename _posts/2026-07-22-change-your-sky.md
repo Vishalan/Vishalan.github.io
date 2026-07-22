@@ -2,7 +2,7 @@
 layout: post
 title: "Change Your Sky"
 subtitle: "On taking a real pause after six years, and what the old stories understood about running away"
-description: "After six years without a proper break, a solo trip across America for the World Cup, read through Seneca and the Mahabharata: why a real pause is not escape but a way of waking up."
+description: "Six years without a real break, then a solo World Cup trip across America. What Seneca and the Mahabharata say about the two kinds of time off, and why a real pause wakes you up."
 date: 2026-07-22 09:00:00 +0530
 author: Vishalan Gharat
 image: /img/blog/worldcup-final-og.jpg
