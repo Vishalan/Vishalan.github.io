@@ -70,9 +70,17 @@ It all settled into focus at Kitty Hawk, on the strip of Outer Banks sand where 
 
 By the end, the World Cup had quietly become the spine of the trip. I had followed Argentina from the round of sixteen in Atlanta, through the semi-final against England, all the way to the final at MetLife. Spain won, and none of it felt sour, because I was there for Messi's last ever World Cup. It takes a generation to witness a player like him, and he had already had his happy ending in Qatar, the kind most people would retire on. He came back for one more chapter he owed no one. There is a particular dignity in watching someone great choose his own moment to stop, while the watching is still worth doing. I had spent six years not stopping. He was a reminder that knowing when to pause is not the opposite of ambition. It may be its most advanced form.
 
-<figure class="post-media">
-  <img src="/img/blog/worldcup-final.jpg" alt="The World Cup final at MetLife Stadium, with the Argentina and Spain flags unfurled across the pitch">
+<figure class="post-media media-pair">
+  <div class="pair-grid">
+    <img src="/img/blog/worldcup-final.jpg" alt="At the World Cup final at MetLife Stadium, the Argentina and Spain flags unfurled across the pitch behind">
+    <video src="/img/blog/worldcup-final-clip.mp4" poster="/img/blog/worldcup-final-clip-poster.jpg" autoplay loop muted playsinline></video>
+  </div>
   <figcaption>The final at MetLife. I was there for Messi's last ever World Cup.</figcaption>
+</figure>
+
+<figure class="post-media">
+  <img src="/img/blog/worldcup-trophy.jpg" alt="The FIFA World Cup 2026 trophy on the podium at MetLife Stadium, the Spain flag across the pitch and the stands packed beyond">
+  <figcaption>Full time at MetLife. Spain, world champions.</figcaption>
 </figure>
 
 Seneca was half right. A change of sky will not save a man who travels to run away. But for the one who travels to wake up, the sky was never the point. It is only the thing that finally gets you to change your soul.
