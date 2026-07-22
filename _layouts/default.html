@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} &middot; {% endif %}{{ site.title }}</title>
+
+    <!-- favicon -->
+    <link href="{{ '/favicon.png' | relative_url }}" rel="icon">
+
+    <!-- web-fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+
+    <!-- same theme assets as the homepage -->
+    <link href="{{ '/css/font-awesome.min.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ '/css/bootstrap.min.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ '/css/style.css' | relative_url }}" rel="stylesheet">
+
+    <!-- blog-only styles (keeps homepage theme untouched) -->
+    <link href="{{ '/css/blog.css' | relative_url }}" rel="stylesheet">
+
+    {% feed_meta %}
+    {% seo %}
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-default navbar-fixed-top probootstrap-navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"
+                    aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ '/' | relative_url }}" title="Vishalan Gharat">VG</a>
+            </div>
+
+            <div id="navbar-collapse" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                    <li><a href="{{ '/' | relative_url }}#experience">Experience</a></li>
+                    <li><a href="{{ '/' | relative_url }}#education">Education</a></li>
+                    <li class="active"><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+                    <li class="probootstra-cta-button last">
+                        <a href="{{ '/' | relative_url }}#contact" class="btn">Get In Touch</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End of navbar -->
+
+    <div id="main-wrapper">
+        <div class="blog-page">
+            {{ content }}
+        </div>
+    </div>
+    <!-- #main-wrapper -->
+
+    <footer class="footer">
+        <div class="copyright-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copytext">&copy; Designed and Maintained with Love by :
+                            <a href="{{ '/' | relative_url }}">Vishalan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- .footer -->
+
+    <!-- jquery + Bootstrap (same as homepage, for the responsive navbar) -->
+    <script src="{{ '/js/jquery-2.1.4.min.js' | relative_url }}"></script>
+    <script src="{{ '/js/bootstrap.min.js' | relative_url }}"></script>
+</body>
+
+</html>

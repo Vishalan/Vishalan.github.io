@@ -1,0 +1,191 @@
+/* Blog-only styles. Kept separate so the homepage theme (style.css) is untouched. */
+
+.blog-page {
+    padding-top: 110px;   /* clear the fixed navbar */
+    padding-bottom: 60px;
+}
+
+.blog-page .container {
+    max-width: 800px;
+}
+
+.back-to-blog {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.post-subtitle {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #666;
+    font-weight: 300;
+    margin: -6px 0 14px;
+}
+
+.post-meta {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+/* Inline media (photos + looping video clips) inside a post */
+.post-media {
+    margin: 32px 0;
+}
+
+/* Vertical (phone) media: keep it phone-sized and centered, not towering */
+.post-media.portrait video,
+.post-media.portrait img {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Two portrait clips/photos side by side, so verticals don't leave white gaps */
+.media-pair .pair-grid {
+    display: flex;
+    gap: 12px;
+}
+
+.media-pair .pair-grid > img,
+.media-pair .pair-grid > video {
+    flex: 1 1 0;
+    width: 50%;
+    min-width: 0;
+    margin: 0;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .media-pair .pair-grid {
+        gap: 8px;
+    }
+}
+
+/* Hero media: the opening visual, sits right under the title/meta */
+.post-media.post-hero {
+    margin-top: 4px;
+    margin-bottom: 40px;
+}
+
+.post-media.post-hero video,
+.post-media.post-hero img {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.post-media img,
+.post-media video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.post-media figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    font-style: italic;
+}
+
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-list > li {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #eee;
+}
+
+.post-list > li:last-child {
+    border-bottom: none;
+}
+
+.post-list h3 {
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+/* Listing card: thumbnail beside the summary */
+.post-card {
+    display: flex;
+    gap: 22px;
+    align-items: flex-start;
+}
+
+.post-thumb {
+    flex: 0 0 260px;
+    display: block;
+}
+
+.post-thumb img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1200 / 630;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.post-card-body {
+    flex: 1 1 auto;
+}
+
+@media (max-width: 600px) {
+    .post-card {
+        flex-direction: column;
+        gap: 14px;
+    }
+    .post-thumb {
+        flex-basis: auto;
+        width: 100%;
+    }
+}
+
+.post-content {
+    line-height: 1.75;
+    font-size: 16px;
+}
+
+.post-content h2,
+.post-content h3 {
+    margin-top: 36px;
+    margin-bottom: 14px;
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.post-content pre {
+    background: #f5f5f5;
+    padding: 16px;
+    border-radius: 6px;
+    overflow: auto;
+}
+
+.post-content code {
+    background: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.post-content pre code {
+    background: none;
+    padding: 0;
+}
+
+.post-content blockquote {
+    border-left: 4px solid #ddd;
+    color: #666;
+    padding-left: 16px;
+    margin-left: 0;
+}

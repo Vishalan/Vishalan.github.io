@@ -1,0 +1,36 @@
+title: Vishalan Gharat
+description: Thoughts on engineering, AI, and building things.
+url: https://vishalan.com
+baseurl: ""
+
+# Clean post URLs: /blog/my-post-title/
+permalink: /blog/:title/
+
+# Publish posts even if the timestamp is slightly ahead of the build clock
+# (avoids timezone-related "future date" skips on GitHub Pages).
+future: true
+
+# Every file in _posts/ uses the post layout automatically
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+# GitHub Pages-supported plugins (RSS feed + SEO meta tags)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Show a large image card when links are shared (X/Twitter, and the same
+# og:image is used by LinkedIn, Facebook, WhatsApp, iMessage, Slack, etc.)
+twitter:
+  card: summary_large_image
+
+# Build files that should not be copied to the published site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
