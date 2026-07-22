@@ -17,7 +17,7 @@ tags: [travel, reflection, solo-travel, world-cup, stoicism, mahabharata]
 
 Almost two thousand years ago, Seneca wrote to a friend who kept travelling to outrun his own unhappiness and kept arriving as the same unhappy man. His verdict was blunt. You must change your soul, not your sky. Wherever you go, he said, you take yourself with you. He was borrowing from Horace, who put it even more plainly: people who race across the sea change their sky, not their state of mind.
 
-I kept thinking about that line on this trip, because on paper I was doing exactly the thing Seneca warned against. Six years without a proper break, and then three weeks alone on the far side of the planet, following a World Cup across America. A textbook case of changing the sky and hoping the rest would sort itself out.
+I kept thinking about that line on this trip, because on paper I was doing exactly the thing Seneca warned against. Six years without a proper break, and then two and a half weeks alone on the far side of the planet, following a World Cup across America. A textbook case of changing the sky and hoping the rest would sort itself out.
 
 Except it did sort itself out. And the reason, I think, comes down to a distinction almost nobody bothers to make: the difference between the two kinds of time off.
 
