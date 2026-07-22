@@ -64,7 +64,9 @@
 .media-collage .collage-grid {
     display: flex;
     gap: 8px;
-    aspect-ratio: 1 / 1;
+    /* Constrain the block height: a landscape shape instead of a tall square */
+    aspect-ratio: 16 / 10;
+    max-height: 520px;
 }
 
 .media-collage .collage-main {
