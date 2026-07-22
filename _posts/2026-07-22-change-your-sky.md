@@ -7,7 +7,7 @@ date: 2026-07-22 09:00:00 +0530
 author: Vishalan Gharat
 image: /img/blog/worldcup-final-og.jpg
 categories: travel
-tags: [travel, reflection, solo-travel, world-cup, stoicism, mahabharata]
+tags: [travel, reflection, world-cup, stoicism, mahabharata]
 ---
 
 <figure class="post-media post-hero">
@@ -17,7 +17,7 @@ tags: [travel, reflection, solo-travel, world-cup, stoicism, mahabharata]
 
 Almost two thousand years ago, Seneca wrote to a friend who kept travelling to outrun his own unhappiness and kept arriving as the same unhappy man. His verdict was blunt. You must change your soul, not your sky. Wherever you go, he said, you take yourself with you. He was borrowing from Horace, who put it even more plainly: people who race across the sea change their sky, not their state of mind.
 
-I kept thinking about that line on this trip, because on paper I was doing exactly the thing Seneca warned against. Six years without a proper break, and then two and a half weeks alone on the far side of the planet, following a World Cup across America. A textbook case of changing the sky and hoping the rest would sort itself out.
+I kept thinking about that line on this trip, because on paper I was doing exactly the thing Seneca warned against. Six years without a proper break, and then two and a half weeks on the far side of the planet, following a World Cup across America. A textbook case of changing the sky and hoping the rest would sort itself out.
 
 Except it did sort itself out. And the reason, I think, comes down to a distinction almost nobody bothers to make: the difference between the two kinds of time off.
 
@@ -48,7 +48,7 @@ But a mind left idle on a beach comes home soft, and soft was the one thing I wa
 
 Here is where I part ways with Seneca, or perhaps where I finally understood him. He is right that travel cannot fix a man who goes in order to escape, because escape keeps your attention pointed backward at the thing you are fleeing. But if you go to look rather than to flee, a new sky does something the old one cannot. It strips away the automatic. At home your routine runs you on rails you have long stopped noticing. Set yourself down somewhere unfamiliar and every ordinary act becomes a small decision again, and in the gap those decisions open up, you can finally see the shape of the life you left behind. You do not change because the sky changed. You change because the sky stops hiding you from yourself.
 
-The trip kept proving this through people. On my worst travel day, when the flight out of Washington was delayed six hours and then cancelled outright, a stranger named Meywin, an Indian who had moved to America years earlier, stepped in. He did not offer sympathy so much as help me think. While the airline came apart around us, he worked the problem with me, and together we booked onto the most expensive flight of the entire trip for the next morning, the one thing that got me to that Argentina and Egypt match with barely time to make the stadium. He drove me to the airport himself, the way you would for family. The next day I met Faris in the same wreckage of stranded passengers and gave him a ride hours down the road. You brace for a solo trip to be lonely. Mostly it was a steady relay of strangers arriving exactly when I needed them, and each one was a small correction to the story I tell myself about my own self-sufficiency.
+The trip kept proving this through people. On my worst travel day, when the flight out of Washington was delayed six hours and then cancelled outright, a stranger named Meywin, an Indian who had moved to America years earlier, stepped in. He did not offer sympathy so much as help me think. While the airline came apart around us, he worked the problem with me, and together we booked onto the most expensive flight of the entire trip for the next morning, the one thing that got me to that Argentina and Egypt match with barely time to make the stadium. He drove me to the airport himself, the way you would for family. The next day I met Faris in the same wreckage of stranded passengers and gave him a ride hours down the road. You brace for a trip like this to be lonely. Mostly it was a steady relay of strangers arriving exactly when I needed them, and each one was a small correction to the story I tell myself about my own self-sufficiency.
 
 <figure class="post-media media-pair">
   <div class="pair-grid">
