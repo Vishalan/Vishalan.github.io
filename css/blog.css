@@ -60,16 +60,39 @@
     display: block;
 }
 
-/* Collage: a portrait pair plus a full-width image, as one block with one caption */
-.media-collage .pair-grid {
-    margin-bottom: 12px;
+/* Collage: one tall feature image on the left, a stacked column on the right */
+.media-collage .collage-grid {
+    display: flex;
+    gap: 8px;
+    aspect-ratio: 1 / 1;
 }
 
-.media-collage .collage-wide {
+.media-collage .collage-main {
+    flex: 1.5;
+    min-width: 0;
+    height: 100%;
     display: block;
-    width: 100%;
-    height: auto;
     margin: 0;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.media-collage .collage-side {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.media-collage .collage-side > img,
+.media-collage .collage-side > video {
+    flex: 1 1 0;
+    min-height: 0;
+    width: 100%;
+    display: block;
+    margin: 0;
+    object-fit: cover;
     border-radius: 6px;
 }
 
@@ -77,8 +100,9 @@
     .pair-grid {
         gap: 8px;
     }
-    .media-collage .pair-grid {
-        margin-bottom: 8px;
+    .media-collage .collage-grid,
+    .media-collage .collage-side {
+        gap: 6px;
     }
 }
 
