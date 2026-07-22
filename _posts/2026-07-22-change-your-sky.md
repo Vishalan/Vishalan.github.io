@@ -78,7 +78,7 @@ By the end, the World Cup had quietly become the spine of the trip. I had follow
       <img src="/img/blog/worldcup-trophy.jpg" alt="The FIFA World Cup 2026 trophy on the podium at MetLife Stadium, the Spain flag across the pitch and the stands packed beyond">
     </div>
   </div>
-  <figcaption>The final at MetLife. Spain lifted the trophy, and I was there for Messi's last ever World Cup.</figcaption>
+  <figcaption>The final at MetLife. Spain lifted the trophy, and Messi's last ever World Cup.</figcaption>
 </figure>
 
 Seneca was half right. A change of sky will not save a man who travels to run away. But for the one who travels to wake up, the sky was never the point. It is only the thing that finally gets you to change your soul.
