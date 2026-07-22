@@ -43,13 +43,13 @@
 }
 
 /* Two portrait clips/photos side by side, so verticals don't leave white gaps */
-.media-pair .pair-grid {
+.pair-grid {
     display: flex;
     gap: 12px;
 }
 
-.media-pair .pair-grid > img,
-.media-pair .pair-grid > video {
+.pair-grid > img,
+.pair-grid > video {
     flex: 1 1 0;
     width: 50%;
     min-width: 0;
@@ -60,9 +60,25 @@
     display: block;
 }
 
+/* Collage: a portrait pair plus a full-width image, as one block with one caption */
+.media-collage .pair-grid {
+    margin-bottom: 12px;
+}
+
+.media-collage .collage-wide {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 6px;
+}
+
 @media (max-width: 600px) {
-    .media-pair .pair-grid {
+    .pair-grid {
         gap: 8px;
+    }
+    .media-collage .pair-grid {
+        margin-bottom: 8px;
     }
 }
 
