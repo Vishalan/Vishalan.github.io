@@ -1,0 +1,571 @@
+/* Homepage design system — the Applied-AI refresh ("Instrument").
+   Separate from the base theme (style.css). Loaded after it, so these win.
+   Direction: keep the sidebar + amber identity; spend the boldness on the
+   outcome metrics, which are the real proof of an applied-AI leader. */
+
+:root {
+    --ink: #1c1c28;        /* headings */
+    --slate: #3d3d50;      /* body */
+    --muted: #86868f;      /* secondary text */
+    --faint: #a6a6b0;      /* tertiary / dates */
+    --hair: #e9e9ef;       /* hairlines */
+    --mist: #f7f7fa;       /* quiet fills */
+    --amber: #ffc107;      /* brand accent */
+    --amber-deep: #b07c00; /* amber that passes contrast on white */
+    --amber-wash: #fff7e0; /* metric chip fill */
+    --amber-edge: #f1e0ad; /* metric chip border */
+    --font-display: 'Space Grotesk', 'Hind', sans-serif;
+}
+
+/* ---- Display type on structural headings ---- */
+.header .content h1,
+.section-title h2,
+.ai-card h3,
+.exp-company > h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+}
+
+/* ---- Section headers: ink + an amber tick, not faint grey ---- */
+.section-title {
+    margin-bottom: 22px;
+}
+
+.section-title h2 {
+    color: var(--ink);
+    font-size: 21px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.section-title h2::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-top: 11px;
+    background: var(--amber);
+    border-radius: 2px;
+}
+
+/* ---- Sidebar hero ---- */
+.header .profile-img img {
+    border-radius: 6px;
+}
+
+.header .content h1 {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--ink);
+    margin-bottom: 10px;
+}
+
+.header .content .lead {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--slate);
+    margin: 0 0 2px;
+}
+
+.header .content .lead-sub {
+    font-size: 15px;
+    color: var(--muted);
+    margin: 0 0 4px;
+}
+
+.header .content .about-text {
+    margin-top: 16px;
+}
+
+.header .content .about-text p {
+    line-height: 1.7;
+}
+
+.sidebar-actions {
+    margin-top: 26px;
+}
+
+.sidebar-actions .btn-primary {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 14px 20px 12px;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .sidebar-actions {
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Center the social icons under the full-width resume button */
+.social-icon {
+    text-align: center;
+}
+
+/* ---- Section intro line ---- */
+.section-intro {
+    color: var(--muted);
+    margin: -8px 0 24px;
+    max-width: 60ch;
+    line-height: 1.6;
+}
+
+/* ---- Selected AI Systems: flat cards, metrics are the hero ---- */
+.ai-systems-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.ai-card {
+    border: 1px solid var(--hair);
+    border-radius: 8px;
+    padding: 24px 26px;
+    background: #ffffff;
+}
+
+.ai-card:hover {
+    border-color: #d7d7e0;
+}
+
+.ai-card h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: none;
+    color: var(--ink);
+    line-height: 1.3;
+}
+
+.ai-card .ai-problem {
+    color: var(--slate);
+    font-size: 15px;
+    margin: 0 0 14px;
+    line-height: 1.6;
+}
+
+.ai-card .ai-did {
+    margin: 0 0 18px;
+    padding: 0;
+    list-style: none;
+}
+
+.ai-card .ai-did li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+    color: var(--slate);
+}
+
+.ai-card .ai-did li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #c9c9d2;
+}
+
+/* results row — separated by a rule, amber-tinted data chips */
+.ai-outcomes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-top: 16px;
+    border-top: 1px solid var(--hair);
+}
+
+.chip {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.3;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: var(--amber-wash);
+    border: 1px solid var(--amber-edge);
+    color: #6f4e00;
+}
+
+.ai-card .ai-note {
+    margin: 12px 0 0;
+    font-size: 12.5px;
+    color: var(--faint);
+    line-height: 1.5;
+}
+
+/* ---- Experience: company + promotion ladder ---- */
+.exp-company {
+    margin-bottom: 38px;
+}
+
+.exp-company:last-child {
+    margin-bottom: 0;
+}
+
+.exp-company > h3 {
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: none;
+    color: var(--ink);
+    margin: 0 0 3px;
+}
+
+.exp-company > h4 {
+    color: var(--muted);
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.exp-company > h4 small {
+    color: var(--faint);
+}
+
+.exp-role {
+    margin: 0 0 18px;
+    padding-left: 18px;
+    border-left: 2px solid var(--hair);
+}
+
+.exp-role:last-child {
+    margin-bottom: 0;
+}
+
+.exp-role h5 {
+    margin: 0 0 8px;
+    font-weight: 600;
+    color: var(--ink);
+    font-size: 15px;
+}
+
+.exp-role h5 small {
+    color: var(--faint);
+    font-weight: 400;
+}
+
+.exp-role ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.exp-role ul li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 6px;
+    line-height: 1.65;
+    color: var(--slate);
+}
+
+.exp-role ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #d2d2db;
+}
+
+/* ---- How I lead AI teams ---- */
+.leadership-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.leadership-list li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: var(--slate);
+}
+
+.leadership-list li:last-child {
+    margin-bottom: 0;
+}
+
+.leadership-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 9px;
+    height: 9px;
+    border-radius: 2px;
+    background: var(--amber);
+}
+
+.leadership-list strong {
+    color: var(--ink);
+    font-weight: 600;
+}
+
+/* ---- Skills: grouped tags ---- */
+.skill-group {
+    margin-bottom: 22px;
+}
+
+.skill-group:last-child {
+    margin-bottom: 0;
+}
+
+.skill-group h3 {
+    font-family: var(--font-display);
+    font-size: 13px;
+    letter-spacing: 0.01em;
+    text-transform: none;
+    color: var(--muted);
+    font-weight: 600;
+    margin: 0 0 11px;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    display: inline-block;
+    font-size: 13px;
+    padding: 5px 12px;
+    border-radius: 6px;
+    background: var(--mist);
+    border: 1px solid var(--hair);
+    color: var(--slate);
+}
+
+/* ---- Writing ---- */
+.writing-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.writing-item {
+    display: flex;
+    gap: 18px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--hair);
+}
+
+.writing-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.writing-thumb {
+    flex: 0 0 120px;
+    display: block;
+}
+
+.writing-thumb img {
+    width: 100%;
+    aspect-ratio: 1200 / 630;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+.writing-body h3 {
+    margin: 0 0 4px;
+    font-size: 16px;
+    text-transform: none;
+    font-weight: 600;
+    font-family: var(--font-display);
+}
+
+.writing-body h3 a {
+    color: var(--ink);
+}
+
+.writing-body h3 a:hover {
+    color: var(--amber-deep);
+}
+
+.writing-body .writing-date {
+    color: var(--faint);
+    font-size: 13px;
+    margin: 0 0 6px;
+}
+
+.writing-body p {
+    margin: 0 0 6px;
+    line-height: 1.6;
+    color: var(--slate);
+}
+
+.writing-all {
+    margin-top: 18px;
+}
+
+@media (max-width: 520px) {
+    .writing-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .writing-thumb {
+        flex-basis: auto;
+        max-width: 220px;
+    }
+}
+
+/* ---- Earlier work (collapsed) ---- */
+.earlier-work {
+    border: 1px solid var(--hair);
+    border-radius: 8px;
+    background: var(--mist);
+}
+
+.earlier-work > summary {
+    cursor: pointer;
+    padding: 16px 20px;
+    font-weight: 600;
+    color: var(--ink);
+    list-style: none;
+    outline: none;
+}
+
+.earlier-work > summary::-webkit-details-marker {
+    display: none;
+}
+
+.earlier-work > summary::after {
+    content: "+";
+    float: right;
+    color: var(--amber-deep);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.earlier-work[open] > summary::after {
+    content: "\2013";
+}
+
+.earlier-work .earlier-body {
+    padding: 4px 20px 16px;
+}
+
+.earlier-work .content-item {
+    margin-bottom: 22px;
+}
+
+.earlier-work .content-item:last-child {
+    margin-bottom: 6px;
+}
+
+.earlier-work .content-item h3 {
+    font-size: 14px;
+    text-transform: none;
+    color: var(--ink);
+}
+
+.earlier-work .content-item p {
+    color: var(--slate);
+}
+
+/* ---- Contact ---- */
+.contact-lines address {
+    margin-bottom: 18px;
+    line-height: 1.7;
+}
+
+.contact-lines strong {
+    color: var(--ink);
+}
+
+.personal-line {
+    color: var(--muted);
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* ---- Accessibility: visible focus, reduced motion ---- */
+a:focus-visible,
+.btn:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+.form-control:focus-visible {
+    outline: 2px solid var(--amber-deep);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* ---- Navbar CTA buttons: Contact (outline) + Resume (filled), on theme ---- */
+.navbar-default .navbar-nav > li.nav-cta > a.nav-btn {
+    display: inline-block;
+    margin: 7px 4px;
+    padding: 8px 18px 7px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-transform: none;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.navbar-default .navbar-nav > li.nav-cta > a.nav-btn-ghost {
+    border: 1.5px solid #ffc107;
+    color: #1c1c28;
+    background: transparent;
+}
+
+.navbar-default .navbar-nav > li.nav-cta > a.nav-btn-ghost:hover,
+.navbar-default .navbar-nav > li.nav-cta > a.nav-btn-ghost:focus {
+    background: #fff8e6;
+    color: #1c1c28;
+}
+
+.navbar-default .navbar-nav > li.nav-cta > a.nav-btn-primary {
+    border: 1.5px solid #ffc107;
+    background: #ffc107;
+    color: #1c1c28;
+}
+
+.navbar-default .navbar-nav > li.nav-cta > a.nav-btn-primary:hover,
+.navbar-default .navbar-nav > li.nav-cta > a.nav-btn-primary:focus {
+    background: #ffb300;
+    border-color: #ffb300;
+    color: #1c1c28;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav > li.nav-cta > a.nav-btn {
+        margin: 6px 15px;
+    }
+}
+
+/* Active nav link: an amber underline, not a grey box */
+.navbar-default .navbar-nav > .active:not(.nav-cta) > a,
+.navbar-default .navbar-nav > .active:not(.nav-cta) > a:hover,
+.navbar-default .navbar-nav > .active:not(.nav-cta) > a:focus {
+    background: transparent;
+    color: #1c1c28;
+    box-shadow: inset 0 -2px 0 #ffc107;
+}

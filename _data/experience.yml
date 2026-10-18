@@ -1,0 +1,56 @@
+# Experience — source of truth: resume. Public-safe wording.
+# AI leadership roles lead; honest credit; no internal codenames; no team-size figures.
+- company: BrowserStack
+  location: Mumbai, India (Remote)
+  dates: Dec 2019 – Present
+  roles:
+    - title: Senior Engineering Manager, AI
+      dates: Jun 2026 – Present
+      bullets:
+        - Lead AI engineering for the AI Features org across Percy, Salesforce test automation, browser test automation and the platform squad.
+        - Led the assessment and first-phase merger of the accessibility rule engine into the AI org.
+        - Own LLM budget and multi-provider strategy across Anthropic, OpenAI, Google Vertex AI and AWS Bedrock, including revenue per AI dollar by product.
+        - "Built an AI spend console: unified spend across providers, anomaly digests, queryable over MCP."
+        - Led ISO/IEC 42001 AI management system certification, passed Jun 2026.
+        - "Authored the agentic harness spec: memory, agent identity, guardrails, an MCP contract registry, deny-by-default writes and a model-agnostic gateway."
+    - title: Engineering Manager, AI Platform & AI Features
+      dates: Nov 2023 – Jun 2026
+      bullets:
+        - Built the AI squads' operating model and production-readiness gates for AI GA.
+        - Helped scale the AI engineering squads across multiple teams.
+        - My team shipped the Percy Visual Review Agent, a browser test agent and a root-cause-analysis agent; I took over and grew the MCP server.
+        - "LLMOps: provider fallback, rate limiting and event-scale capacity planning."
+        - "AI security: SOC 2 for the AI platform, the first internal AI pentest (OWASP LLM Top 10) and Zero Trust."
+        - Set the AI org's first engineering OKRs and ran an AI-assisted engineering program (25.6% average efficiency gain).
+    - title: Senior Lead / Team Lead, Live
+      dates: Jun 2021 – Oct 2023
+      bullets:
+        - Led the squad owning Live and the shared MySQL fleet.
+        - Org-wide alert routing cut alerts 85% and MTTA from about 35h to 1h40m.
+        - Ran the MySQL 5.7 upgrade benchmark.
+        - Gave a large US bank browser-based Mac access within a day, and four dedicated Macs within four weeks.
+    - title: Software Engineer, Live (real-device streaming)
+      dates: Dec 2019 – Jun 2021
+      bullets:
+        - "WebRTC / nodeRTC streaming: cut connect time 12%."
+        - TURN high availability.
+        - Owned Live Ops.
+- company: Morgan Stanley
+  location: Mumbai, India
+  dates: Jan 2019 – Dec 2019
+  roles:
+    - title: Senior Associate, Data Strategy (Private Wealth Management)
+      dates: Jan 2019 – Dec 2019
+      bullets:
+        - Built an Apache Ignite data fabric over 100M+ records; cut API latency 1.7s to 0.5s.
+        - Built a sales-orchestration dashboard that automated 95% of manual activity.
+- company: Oracle
+  location: Mumbai, India
+  dates: Aug 2016 – Dec 2018
+  roles:
+    - title: Application Developer II (Oracle Banking Platform)
+      dates: Aug 2016 – Dec 2018
+      bullets:
+        - Built a decision-tree credit-scoring model (86% accuracy) that cut third-party API cost 50%.
+        - Built a pluggable REST framework serving 3,000+ banking services.
+        - Built a credit-monitoring dashboard over 1B+ data points.

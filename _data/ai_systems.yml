@@ -1,0 +1,53 @@
+# Key AI projects — card copy.
+# Public-safe: no customer names, no absolute money figures, no team-size or ARR
+# claims, honest team credit, no internal codenames, softened wording.
+- title: Agent-ready platform and MCP (AI Transformation)
+  problem: The AI products needed one agent-ready foundation, and external AI assistants needed a clean way to drive BrowserStack.
+  did:
+    - Set the AI Transformation direction for the AI Features org.
+    - "The platform team built the agent-ready platform: a shared inference loop, guardrails, memory and an SDK."
+    - Took over and grew the MCP server to 18+ tools across 4 products, with remote MCP (OAuth and one-click install).
+  outcomes:
+    - 18+ MCP tools, 4 products
+    - Remote MCP (OAuth)
+    - ~75% of MCP code AI-generated
+- title: Percy Visual Review Agent
+  problem: Visual regression testing left teams triaging piles of diffs by hand.
+  did:
+    - I owned the lane; my team built a multimodal LLM agent that classifies and explains visual diffs.
+    - Ran an eval-driven model bake-off (82% coverage / 85% accuracy for the chosen model, versus 76% / 75%).
+    - Drove a 10% to 100% canary rollout and a provider re-platforming.
+  outcomes:
+    - GA Oct 2025
+    - Inference cost ~75–90% lower
+    - Adoption 86% → 91%
+    - Consistency 50% → 89%
+- title: Natural-language browser test agent
+  problem: Web test automation written in plain language that stays stable as the web under it changes.
+  did:
+    - Drove the pivot to a visually grounded agent built on the open-source Magnitude framework.
+    - Validated on an internal testbed scored with an LLM judge.
+  outcomes:
+    - Step stability 85–87% → 98%
+    - First action 25s → 14s
+    - 3-month retention 61% → 79%
+    - India data residency
+- title: LLM platform review and gateway
+  problem: Product surfaces reached models through separate, mostly ungoverned paths.
+  did:
+    - Reviewed the LLM pipelines and model access, and found five access paths with only one governed.
+    - Benchmarked the two main pipelines (82% versus 69% recording accuracy, about a 7x gap in P90 cost per test) to set the mandate.
+    - Prototyped a single governed, model-agnostic gateway.
+  outcomes:
+    - 5 access paths, 1 governed
+    - ~7x P90 cost gap
+  note: These figures are pre-gateway benchmarks that set the mandate, not gateway results.
+- title: Test Management AI
+  problem: Pick the tests worth running, and turn PRDs into test cases.
+  did:
+    - Semantic test selection with embeddings, pgvector and a weighted rule engine, shipped as a Jira app.
+    - An eval-first pipeline from PRD to test cases.
+    - Took this and three other initiatives through the company's internal patent review. None were ultimately filed, but the process taught me how patentability is judged, from prior art and novelty to claim drafting.
+  outcomes:
+    - Coverage 83.4% → 90.4%
+    - Shipped Oct 2024
