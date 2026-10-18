@@ -87,33 +87,22 @@
 
 .sidebar-actions {
     margin-top: 26px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
 }
 
-.sidebar-actions .btn {
+.sidebar-actions .btn-primary {
+    display: block;
+    width: 100%;
     margin: 0;
-    padding: 11px 20px 9px;
-    font-size: 13px;
-}
-
-.btn-ghost {
-    background: transparent;
-    border: 1.5px solid var(--hair);
-    color: var(--ink);
-}
-
-.btn-ghost:hover,
-.btn-ghost:focus {
-    border-color: var(--amber);
-    color: var(--ink);
-    background: #fffdf5;
+    padding: 14px 20px 12px;
+    font-size: 14px;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
     .sidebar-actions {
-        justify-content: center;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
