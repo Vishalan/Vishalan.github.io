@@ -45,9 +45,9 @@
 - title: Test Management AI
   problem: Pick the tests worth running, and turn PRDs into test cases.
   did:
-    - Semantic test selection (embeddings, pgvector and a weighted rule engine), shipped as a Jira app with a company patent filing.
+    - Semantic test selection with embeddings, pgvector and a weighted rule engine, shipped as a Jira app.
     - An eval-first pipeline from PRD to test cases.
+    - Took this and three other initiatives through the company's internal patent process. None were filed in the end, but I came away knowing how that process actually works.
   outcomes:
     - Coverage 83.4% → 90.4%
     - Shipped Oct 2024
-    - Patent filed
