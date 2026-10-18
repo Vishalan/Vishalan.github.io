@@ -516,3 +516,47 @@ summary:focus-visible,
         animation: none !important;
     }
 }
+
+/* ---- Navbar CTA buttons: Contact (outline) + Resume (filled), on theme ---- */
+.navbar-default .navbar-nav > li.nav-cta > a.nav-btn {
+    display: inline-block;
+    margin: 13px 4px;
+    padding: 8px 18px 7px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-transform: none;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.navbar-default .navbar-nav > li.nav-cta > a.nav-btn-ghost {
+    border: 1.5px solid #ffc107;
+    color: #1c1c28;
+    background: transparent;
+}
+
+.navbar-default .navbar-nav > li.nav-cta > a.nav-btn-ghost:hover,
+.navbar-default .navbar-nav > li.nav-cta > a.nav-btn-ghost:focus {
+    background: #fff8e6;
+    color: #1c1c28;
+}
+
+.navbar-default .navbar-nav > li.nav-cta > a.nav-btn-primary {
+    border: 1.5px solid #ffc107;
+    background: #ffc107;
+    color: #1c1c28;
+}
+
+.navbar-default .navbar-nav > li.nav-cta > a.nav-btn-primary:hover,
+.navbar-default .navbar-nav > li.nav-cta > a.nav-btn-primary:focus {
+    background: #ffb300;
+    border-color: #ffb300;
+    color: #1c1c28;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav > li.nav-cta > a.nav-btn {
+        margin: 6px 15px;
+    }
+}
