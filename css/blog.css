@@ -280,7 +280,7 @@
 /* Navbar CTA buttons (match the homepage): Contact outline + Resume filled */
 .navbar-default .navbar-nav > li.nav-cta > a.nav-btn {
     display: inline-block;
-    margin: 13px 4px;
+    margin: 7px 4px;
     padding: 8px 18px 7px;
     border-radius: 4px;
     font-size: 13px;

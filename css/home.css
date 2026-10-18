@@ -520,7 +520,7 @@ summary:focus-visible,
 /* ---- Navbar CTA buttons: Contact (outline) + Resume (filled), on theme ---- */
 .navbar-default .navbar-nav > li.nav-cta > a.nav-btn {
     display: inline-block;
-    margin: 13px 4px;
+    margin: 7px 4px;
     padding: 8px 18px 7px;
     border-radius: 4px;
     font-size: 13px;
