@@ -17,7 +17,7 @@
       dates: Nov 2023 – Jun 2026
       bullets:
         - Built the AI squads' operating model and production-readiness gates for AI GA.
-        - Scaled the AI engineering squads to ~50–60 engineers.
+        - Scaled the AI engineering squads into a multi-team organisation.
         - My team shipped the Percy Visual Review Agent, the Low-Code Automation browser agent, the MCP server and a root-cause-analysis agent.
         - LLMOps — provider fallback, rate limiting and event-scale capacity planning.
         - AI security — SOC 2 for the AI platform, the first internal AI pentest (OWASP LLM Top 10) and Zero Trust.

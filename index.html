@@ -14,8 +14,11 @@ image: /img/og-home.png
     <!-- favicon -->
     <link href="{{ '/favicon.png' | relative_url }}" rel="icon">
 
-    <!-- web-fonts -->
+    <!-- web-fonts: Hind (body) + Space Grotesk (display/headings) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- font-awesome -->
     <link href="{{ '/css/font-awesome.min.css' | relative_url }}" rel="stylesheet">
@@ -93,7 +96,8 @@ image: /img/og-home.png
                     </div>
                     <div class="content">
                         <h1>Vishalan Gharat</h1>
-                        <span class="lead">Senior Engineering Manager, AI at BrowserStack · Applied AI leader · IIM Ahmedabad · ex-Morgan Stanley, ex-Oracle</span>
+                        <p class="lead">Senior Engineering Manager, AI at BrowserStack</p>
+                        <p class="lead-sub">Applied AI, from eval to production.</p>
 
                         <div class="about-text">
                             <p>
@@ -101,7 +105,7 @@ image: /img/og-home.png
                                 visual review, browser automation, root-cause analysis, and our MCP server. My work sits where
                                 models meet the business &mdash; evals, cost per task, reliability and AI governance. Before AI,
                                 I spent a decade on real-time streaming, core banking (Oracle) and wealth-management data
-                                (Morgan Stanley).
+                                (Morgan Stanley), with a management grounding from IIM Ahmedabad.
                             </p>
                             <p class="personal-line">Off-hours: FIFA, 3D printing, and building small hardware with Claude.</p>
                         </div>
@@ -160,7 +164,6 @@ image: /img/og-home.png
                                 <div class="ai-card">
                                     <h3>{{ s.title }}</h3>
                                     <p class="ai-problem">{{ s.problem }}</p>
-                                    <span class="ai-did-label">What I did</span>
                                     <ul class="ai-did">
                                         {% for d in s.did %}<li>{{ d }}</li>{% endfor %}
                                     </ul>
@@ -248,7 +251,7 @@ image: /img/og-home.png
                                 </li>
                                 {% endfor %}
                             </ul>
-                            <p><a href="{{ '/blog/' | relative_url }}">Read the blog &rarr;</a></p>
+                            <p class="writing-all"><a href="{{ '/blog/' | relative_url }}">All writing</a></p>
                             {% endif %}
                         </div>
                     </section>
