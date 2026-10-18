@@ -18,10 +18,11 @@ defaults:
     values:
       layout: post
 
-# GitHub Pages-supported plugins (RSS feed + SEO meta tags)
+# GitHub Pages-supported plugins (RSS feed + SEO meta tags + sitemap)
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Show a large image card when links are shared (X/Twitter, and the same
 # og:image is used by LinkedIn, Facebook, WhatsApp, iMessage, Slack, etc.)

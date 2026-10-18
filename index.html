@@ -1,33 +1,57 @@
+---
+title: "Vishalan Gharat — Applied AI Engineering Leader"
+description: "Senior Engineering Manager, AI at BrowserStack. I lead teams that ship production LLM agents, MCP servers and evaluated, cost-efficient AI systems. Mumbai."
+image: /img/og-home.png
+---
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Vishalan Gharat</title>
+    <!-- The above 3 meta tags *must* come first in the head -->
 
     <!-- favicon -->
-    <link href="favicon.png" rel=icon>
+    <link href="{{ '/favicon.png' | relative_url }}" rel="icon">
 
     <!-- web-fonts -->
     <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
 
     <!-- font-awesome -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ '/css/font-awesome.min.css' | relative_url }}" rel="stylesheet">
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ '/css/bootstrap.min.css' | relative_url }}" rel="stylesheet">
 
     <!-- Style CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="{{ '/css/style.css' | relative_url }}" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Homepage refresh styles (keeps the base theme untouched) -->
+    <link href="{{ '/css/home.css' | relative_url }}" rel="stylesheet">
+
+    {% seo %}
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Vishalan Gharat",
+      "jobTitle": "Senior Engineering Manager, AI",
+      "worksFor": { "@type": "Organization", "name": "BrowserStack" },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "Indian Institute of Management Ahmedabad" },
+        { "@type": "CollegeOrUniversity", "name": "University of Mumbai" }
+      ],
+      "address": { "@type": "PostalAddress", "addressLocality": "Mumbai", "addressCountry": "IN" },
+      "url": "https://vishalan.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/vishalan/",
+        "https://github.com/vishalan",
+        "https://twitter.com/VishalanGharat"
+      ],
+      "knowsAbout": ["Applied AI", "Large language models", "AI agents", "Model Context Protocol", "LLM evaluation", "AI governance", "ISO/IEC 42001"]
+    }
+    </script>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar">
@@ -41,851 +65,306 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#" title="MediaMills">VG</a>
+                <a class="navbar-brand" href="{{ '/' | relative_url }}" title="Vishalan Gharat">VG</a>
             </div>
 
             <div id="navbar-collapse" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#experience">Experience</a>
-                    </li>
-                    <li class="dropdown-submenu dropdown">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
-                            <span>My Work</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#professional_projects">Professional Projects</a>
-                            </li>
-                            <li>
-                                <a href="#academics_other_projects">Academics and Other Projects</a>
-                            </li>
-                            <li>
-                                <a href="#achievements">Achievements</a>
-                            </li>
-                            <li>
-                                <a href="#portfolio">Portfolio</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#education">Education</a>
-                    </li>
-                    <li>
-                        <a href="/blog/">Blog</a>
-                    </li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#ai-systems">AI Systems</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#writing">Writing</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li class="probootstra-cta-button last">
-                        <a href="#contact" class="btn">Get In Touch</a>
+                        <a href="{{ '/assets/Vishalan_Gharat_Resume.pdf' | relative_url }}" target="_blank" rel="noopener" class="btn">Resume</a>
                     </li>
-                    <li class="probootstra-cta-button last">
-                        <a href="https://tiny.cc/vishalan" target="_blank" class="btn">Download Resume</a>
-                    </li>
-                    <!-- <li class="probootstra-cta-button last"><a href="#" class="btn btn-ghost" data-toggle="modal" data-target="#signupModal">Sign up</a></li> -->
                 </ul>
             </div>
         </div>
     </nav>
     <!-- End of navbar -->
-    <div id="main-wrapper">
-        <!-- Page Preloader -->
-        <div id="preloader">
-            <div id="status">
-                <div class="status-mes"></div>
-            </div>
-        </div>
 
+    <div id="main-wrapper">
         <div class="columns-block container">
             <div class="left-col-block blocks">
-                <header class="header theiaStickySidebar">
+                <header class="header theiaStickySidebar" id="about">
                     <div class="profile-img">
-                        <img src="img/img-profile-square.jpg" class="img-responsive" alt="" />
+                        <img src="{{ '/img/img-profile-square.jpg' | relative_url }}" class="img-responsive" alt="Vishalan Gharat" />
                     </div>
                     <div class="content">
                         <h1>Vishalan Gharat</h1>
-                        <span class="lead">AI Engineering Leadership at BrowserStack | IIM-A | Ex-Morgan Stanley | Ex-Oracle</span>
+                        <span class="lead">Senior Engineering Manager, AI at BrowserStack · Applied AI leader · IIM Ahmedabad · ex-Morgan Stanley, ex-Oracle</span>
 
                         <div class="about-text">
                             <p>
-                                I am a Computer Engineering graduate who loves to search for moments of happiness in the catch block of this exceptional
-                                thing called TECHNOLOGY. I love to iterate through every index of array filled with challenges
-                                before it gets OUTOFBOUNDS. I love to score goals with my feet and my game controller #FIFA4EVER.
-                                <br>
-                                <a  href="https://tiny.cc/vishalan" target="_blank" class="btn btn-primary">Download Resume</a>
+                                I lead applied AI engineering at BrowserStack, taking LLM agents from prototype to production:
+                                visual review, browser automation, root-cause analysis, and our MCP server. My work sits where
+                                models meet the business &mdash; evals, cost per task, reliability and AI governance. Before AI,
+                                I spent a decade on real-time streaming, core banking (Oracle) and wealth-management data
+                                (Morgan Stanley).
                             </p>
-
-                            <!-- <p>Energistically fabricate customized imperatives through cooperative catalysts for change.</p> -->
-
-                            <p>
-                                <!-- <img src="img/Signature.png" alt="" class="img-responsive" /> -->
-
-                            </p>
+                            <p class="personal-line">Off-hours: FIFA, 3D printing, and building small hardware with Claude.</p>
                         </div>
 
+                        <div class="sidebar-actions">
+                            <a href="{{ '/assets/Vishalan_Gharat_Resume.pdf' | relative_url }}" target="_blank" rel="noopener" class="btn btn-primary">Download resume</a>
+                            <a href="mailto:vishalangharat@gmail.com" class="btn btn-ghost">Email</a>
+                            <a href="https://www.linkedin.com/in/vishalan/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+                        </div>
 
                         <ul class="social-icon">
-
                             <li>
-                                <a href="https://github.com/vishalan" target="_blank">
+                                <a href="https://github.com/vishalan" target="_blank" rel="noopener" aria-label="GitHub">
                                     <i class="fa fa-github" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/in/vishalan/" target="_blank">
+                                <a href="https://www.linkedin.com/in/vishalan/" target="_blank" rel="noopener" aria-label="LinkedIn">
                                     <i class="fa fa-linkedin" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/vishalan.gharat" target="_blank">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/VishalanGharat" target="_blank">
+                                <a href="https://twitter.com/VishalanGharat" target="_blank" rel="noopener" aria-label="X (Twitter)">
                                     <i class="fa fa-twitter" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <!-- <li>
-                                <a href="#">
-                                    <i class="fa fa-slack" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-dribbble" aria-hidden="true"></i>
-                                </a>
-                            </li> -->
-                            <li>
-                                <a href="https://www.instagram.com/vishalan.gharat/" target="_blank">
-                                    <i class="fa fa-instagram" aria-hidden="true"></i>
                                 </a>
                             </li>
                         </ul>
                     </div>
-
                 </header>
                 <!-- .header-->
             </div>
             <!-- .left-col-block -->
 
-
-            <div id="experience" class="right-col-block blocks">
+            <div class="right-col-block blocks">
                 <div class="theiaStickySidebar">
 
-                    <section class="section-wrapper section-experience gray-bg">
+                    <!-- What I do now -->
+                    <section class="section-wrapper gray-bg">
                         <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="section-title">
-                                        <h2>Experience</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--.row-->
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="content-item">
-                                        <small>January 2020 - Present</small>
-                                        <h3>Senior Engineering Manager - AI</h3>
-                                        <h4>Browserstack, Mumbai/Remote</h4>
-
-                                        <p>Browserstack is a Testing Infrastructure for the Internet,
-                                            Working with the AI Platform Team to develop AI-driven products and features that enhance the QA experience.
-                                            <br>
-                                            <a href="#bs_projects">Projects at BS</a>
-                                        </p>
-                                    </div>
-                                    <div class="content-item">
-                                            <small>January 2019 - January 2020</small>
-                                            <h3>Senior Associate</h3>
-                                            <h4>Morgan Stanley, Mumbai</h4>
-    
-                                            <p>Working with Data Strategy team of Private Wealth Management group in Morgan Stanley, which caters investment banking services to ultra high net worth individuals. 
-                                                <br>
-                                                <a href="#ms_projects">Projects at MS</a>
-                                            </p>
-                                    </div>
-                                    <div class="content-item">
-                                        <small>August 2016 - December 2018</small>
-                                        <h3>Senior Software Developer</h3>
-                                        <h4>Oracle, Mumbai</h4>
-
-                                        <p>Adhered to the SCRUM framework (Agile Methodology) on development of OBP (Oracle
-                                            Banking Platform) primarily with JAVA J2EE Platform and ADF on Weblogic Environment
-                                            Stack.
-                                            <br>
-                                            <a href="#oracle_projects">Projects at Oracle</a>
-                                        </p>
-                                    </div>
-                                    <!-- .experience-item -->
-                                    <div class="content-item">
-                                        <small>February 2016 - July 2016</small>
-                                        <h3>Software Intern</h3>
-                                        <h4>Homely, Mumbai</h4>
-
-                                        <p>Worked as a technical intern in a growing food startup.
-                                            <br>
-                                            <!-- <br> => Android App for order tracking, management, product creations, analytics,
-                                            and billing (Homely for Yummaker)
-                                            <br>
-                                            <a href="https://goo.gl/dpMGB3" target="_blank">Link to Play Store Listing</a>
-                                            <br> => Company's Single Page Website
-                                            <br>
-                                            <a href="http://mangorevolutions.com" target="_blank">mangorevolutions.com</a> -->
-                                            <a href="#homely_projects">Projects at Homely</a>
-                                        </p>
-
-                                    </div>
-                                    <!-- .experience-item -->
-                                    <div class="content-item">
-                                        <small>2015</small>
-                                        <h3>Recognized Technical Content Writer</h3>
-                                        <h4>StupidSid, Mumbai</h4>
-
-                                        <p>Contributed technical content to the popular educational resource website stupidsid.com</p>
-                                    </div>
-                                    <div class="content-item">
-                                        <small>2014-2015</small>
-                                        <h3>President</h3>
-                                        <h4>CSI CRYPTEX Workshop Committee, FCRIT</h4>
-
-                                        <p>Represented as the president of CSI-Cryptex workshop committee for the year 2014-2015.</p>
-                                    </div>
-                                    <div class="content-item">
-                                        <small>2014-2015</small>
-                                        <h3>Operation Head</h3>
-                                        <h4>Entrepreneurship Cell (E-Cell), FCRIT</h4>
-
-                                        <p>Established E-Cell in College for the promotion of Entrepreneurship among students
-                                            & served as the operation head for the year 2014-2015.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--.row-->
+                            <div class="section-title"><h2>What I do now</h2></div>
+                            <ul class="leadership-list">
+                                <li>I run engineering for the AI Features org &mdash; Low-Code Automation, Percy, Salesforce test automation and the AI Engine.</li>
+                                <li>I make AI shippable: eval gates before GA, cost I can see per product, and governance that holds up to audit.</li>
+                                <li>Five production AI systems in the last two years, each with numbers attached &mdash; below.</li>
+                            </ul>
                         </div>
-                        <!-- .container-fluid -->
-
                     </section>
-                    <!-- .section-experience -->
 
-
-                    <section name="skills" class="expertise-wrapper section-wrapper gray-bg">
+                    <!-- Selected AI Systems -->
+                    <section id="ai-systems" class="section-wrapper gray-bg">
                         <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="section-title">
-                                        <h2>Skills</h2>
+                            <div class="section-title"><h2>Selected AI Systems</h2></div>
+                            <p class="section-intro">Production systems I led or owned. Team credit noted where my team built it; outcomes are ratios, not internal figures.</p>
+                            <div class="ai-systems-grid">
+                                {% for s in site.data.ai_systems %}
+                                <div class="ai-card">
+                                    <h3>{{ s.title }}</h3>
+                                    <p class="ai-problem">{{ s.problem }}</p>
+                                    <span class="ai-did-label">What I did</span>
+                                    <ul class="ai-did">
+                                        {% for d in s.did %}<li>{{ d }}</li>{% endfor %}
+                                    </ul>
+                                    {% if s.outcomes %}
+                                    <div class="ai-outcomes">
+                                        {% for o in s.outcomes %}<span class="chip">{{ o }}</span>{% endfor %}
                                     </div>
+                                    {% endif %}
+                                    {% if s.note %}<p class="ai-note">{{ s.note }}</p>{% endif %}
                                 </div>
-                            </div>
-                            <!-- .row -->
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="expertise-item">
-                                        <h3>Proficient in DS & ALGO</h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="expertise-item">
-                                        <h3>Java</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <a name="bs_projects"></a>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="expertise-item">
-                                        <h3>Spring</h3>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="expertise-item">
-                                        <h3>Hibernate</h3>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="expertise-item">
-                                        <h3>AWS</h3>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="expertise-item">
-                                        <h3>Android</h3>
-                                    </div>
-                                </div>
-
-                            </div>
-							<div class="row">
-                                <div class="col-md-6">
-                                    <div class="expertise-item">
-                                        <h3>SQL & NOSQL</h3>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="expertise-item">
-                                        <h3></h3>
-                                    </div>
-                                </div>
-
+                                {% endfor %}
                             </div>
                         </div>
                     </section>
-                    <!-- .expertise-wrapper -->
 
-
-                    <a name="ms_projects"></a>
-                    <section id="professional_projects" class="section-wrapper section-interest gray-bg">
+                    <!-- Experience -->
+                    <section id="experience" class="section-wrapper gray-bg">
                         <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="section-title">
-                                        <h2>Projects</h2>
-                                    </div>
+                            <div class="section-title"><h2>Experience</h2></div>
+                            {% for company in site.data.experience %}
+                            <div class="content-item exp-company">
+                                <h3>{{ company.company }}</h3>
+                                <h4>{{ company.location }} <small>· {{ company.dates }}</small></h4>
+                                {% for role in company.roles %}
+                                <div class="exp-role">
+                                    <h5>{{ role.title }} <small>· {{ role.dates }}</small></h5>
+                                    <ul>
+                                        {% for b in role.bullets %}<li>{{ b }}</li>{% endfor %}
+                                    </ul>
                                 </div>
+                                {% endfor %}
                             </div>
-                            <!-- .row -->
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="content-item">
-                                            <h3>Data Fabric on top of relational data source</h3>
-                                            <h4>Morgan Stanley
-                                                <small>January 2019 - Present</small>
-                                            </h4>
-    
-                                            <p>A Data Fabric on top of a relational database source to imrpove performance through caching while keeping the system durable.</p>
-                                    </div>
-                                    <a name="oracle_projects"></a>
-                                    <div class="content-item">
-                                        <h3>Customer Documents Analysis and Categorization</h3>
-                                        <h4>Oracle
-                                            <small>August 2018 - September 2018</small>
-                                        </h4>
-
-                                        <p>An OCR microservices module written in flask and powered by tesseract for customer
-                                            documents analysis and categorisation</p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>Predictive Credit Score Analytics</h3>
-                                        <h4>Oracle
-                                            <small>June 2018 - August 2018</small>
-                                        </h4>
-                                        <p>A machine learning module to predict credit scores of a customer using decision trees
-                                            in neural networks hosted in tensorflow</p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>OBP REST FRAMEWORK AND CODE GENERATOR JAPA</h3>
-                                        <h4>Oracle
-                                            <small>March 2018 – September 2018</small>
-                                        </h4>
-                                        <p>Designing a REST API Framework for exposing OBP(Oracle Banking Platform) services
-                                            and creating a code generator to automate the process. Swagger documentation
-                                            for the same is also generated from a utility which parses through existing services
-                                            and few inputs.</p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>SonarQube Configuration, CJIRA Integration and Toxicity Dashboard</h3>
-                                        <h4>Oracle
-                                            <small>Jan 2018 – March 2018</small>
-                                        </h4>
-                                        <p>Configuring latest SonarQube version for the current product build and integrating
-                                            it with CJIRA for issue tracking. A Dashboard to display the current summary
-                                            of separate toxicity run developed on MEAN stack.</p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>Functional Setup Manager</h3>
-                                        <h4>Oracle
-                                            <small>June 2017 – Jan 2018</small>
-                                        </h4>
-                                        <p>Working on porting the legacy implementation on version 7 to version 13. The tool
-                                            helps an end user for UI orchestration.</p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>Oracle Application Builder Cloud Service</h3>
-                                        <h4>Oracle
-                                            <small>Jan 2017 – April 2017</small>
-                                        </h4>
-                                        <p>A derivation of Oracle JET (which is based on concepts of knockoutJS). Currently,
-                                            working on creating extension components which can be used to support a modular
-                                            development for a business user.</p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>JAPA for deriving statistical hierarchy of entire OBP UI framework</h3>
-                                        <h4>Oracle
-                                            <small>September 2017</small>
-                                        </h4>
-                                        <p>An utility responsible for figuring out entire OBP ADF UI component embed hierarchy
-                                            to bring in dynamic designing concept in localisation layer. This hierarchy is
-                                            also used to understand inter-module dependency, product flexibility and entire
-                                            UI framework modularity.</p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>Branch Payment Networks - End to End Functionality</h3>
-                                        <h4>Oracle
-                                            <small>October 2017 – December 2017</small>
-                                        </h4>
-                                        <p>Implemented both HOST and UI. The host middleware services are implemented in JAVA
-                                            with help of JPA. The UI is developed in ADF.</p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>Convenience Offerings - End to End Functionality</h3>
-                                        <h4>Oracle
-                                            <small>May 2017 – Aug 2017</small>
-                                        </h4>
-                                        <p>Implemented both HOST and UI. The host middleware services are implemented in JAVA
-                                            with help of JPA. The UI is developed in ADF.</p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>Credit Monitoring Dashboard OBIEE integrated inside ADF</h3>
-                                        <h4>Oracle
-                                            <small>Sept 2016 – June 2017</small>
-                                        </h4>
-                                        <p>A dashboard developed in Oracle Business Intelligence Tool and integrated inside
-                                            ADF which implements data warehousing concepts to monitor trends and statistics
-                                            in banking.</p>
-                                    </div>
-                                    <a name="homely_projects"></a>
-                                    <div class="content-item">
-                                        <h3>Credit Monitoring Dashboard ODI Data Mart</h3>
-                                        <h4>Oracle
-                                            <small>May 2017</small>
-                                        </h4>
-                                        <p>Designing data mart for Credit Monitoring Dashboard in Oracle Data Integrator.</p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>Homely for Yummaker</h3>
-                                        <h4>Homely
-                                            <small>2016</small>
-                                        </h4>
-                                        <p>Android App for order tracking, management, product creations, analytics, and billing
-                                            <br>
-                                            <a href="https://play.google.com/store/apps/details?id=homely.mangorevolutions.com.homelynow" target="_blank">Link to Play Store Listing</a>
-                                        </p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>Website mangorevolutions.com</h3>
-                                        <h4>Homely
-                                            <small>2016</small>
-                                        </h4>
-                                        <p>Company's Sinlge Page Portfolio Website
-                                            <br>
-                                            <a href="http://mangorevolutions.com" target="_blank">mangorevolutions.com</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .row -->
-
+                            {% endfor %}
                         </div>
                     </section>
-                    <!-- .section-publications -->
-                    <a name="academics_other_projects"></a>
-                    <section class="section-wrapper section-interest gray-bg">
+
+                    <!-- How I lead AI teams -->
+                    <section id="leadership" class="section-wrapper gray-bg">
                         <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="section-title">
-                                        <h2>Academics and Other Projects</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .row -->
-                            <a name="oracle_projects"></a>
-                            <div class="row">
-                                <div class="col-md-12">
-
-                                    <div class="content-item">
-                                        <h3>Grid Computing in Smartphones (SmartGrid - An Android Application)</h3>
-
-                                        <p>The BE curriculum academic final year project, which aims at utilizing computational
-                                            power of smartphones connected to a wireless grid to solve a common problem efficiently
-                                            in less time. A messenger which utilizes the power of every user’s device. The
-                                            application is listed in Google Play. Won the 1st prize and a cash prize of Rs.
-                                            70000/- for National Level project competition conducted under IEEE at SCOE,
-                                            Khargar
-                                            <br>
-                                            <a href="https://play.google.com/store/apps/details?id=com.smartgrid.smartgrid_app" target="_blank">Link to Play Store Listing</a>
-                                        </p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>Koinex Monitor - An Android Application</h3>
-
-                                        <p>A monitoring and notifications application for popular crypto-currency exchange platform
-                                            Koinex.
-                                            <br>
-                                            <a href="http://play.google.com/store/apps/details?id=com.vishalan.koinex" target="_blank">Link to Play Store Listing</a>
-                                        </p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>School Bus Tracking using Android Application</h3>
-
-                                        <p>An android application to monitor the status of the school bus and activity of the
-                                            students boarding the bus.</p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>College Intranet Android Application and Website</h3>
-
-                                        <p>Project to provide services like file sharing, schedule management and posting notices
-                                            which can be directly utilized by students and teachers on any android based
-                                            smartphone.
-                                        </p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>Website mindassets.in</h3>
-
-                                        <p>A website for an organisation which provides Internet Based Job Opportunities for
-                                            differently abled individuals.
-                                            <br>
-                                            <a href="http://mindassets.in" target="_blank">mindassets.in</a>
-                                        </p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>Cargo Alignment Robot</h3>
-
-                                        <p>A robot, which can monitor the position of a box placed in a warehouse and align
-                                            them correctly according to the proper defined alignment.
-                                            <br>
-                                            <a href="https://www.youtube.com/watch?v=5Gd2zIdiWKE&feature=youtu.be" target="_blank">Link to Video Demo</a>
-                                        </p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>Weed Plucking Robot</h3>
-
-                                        <p>A robot, which can differentiate between plants and weeds, then pluck and place the
-                                            weeds in the designated deposition zone.
-                                            <br>
-                                            <a href="https://www.youtube.com/watch?v=5Gd2zIdiWKE&feature=youtu.be" target="_blank">Link to Video Demo</a>
-                                        </p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>Common Creed</h3>
-
-                                        <p>A blog about tech and gaming
-                                            <br>
-                                            <a href="http://www.commoncreed.io" target="_blank">commoncreed.io</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .row -->
-
+                            <div class="section-title"><h2>How I lead AI teams</h2></div>
+                            <ul class="leadership-list">
+                                <li><strong>Operating model &amp; readiness gates.</strong> Every AI feature clears the same production-readiness bar before GA.</li>
+                                <li><strong>Eval-first delivery.</strong> Model bake-offs, testbeds and LLM-as-judge before anything reaches a user.</li>
+                                <li><strong>LLM cost discipline.</strong> Multi-provider strategy, fallback, and spend I can see and query per product.</li>
+                                <li><strong>AI governance.</strong> ISO/IEC 42001, SOC 2 and OWASP LLM Top 10 built into how the org works, not bolted on.</li>
+                            </ul>
                         </div>
                     </section>
-                    <section id="achievements" class="section-wrapper section-interest gray-bg">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="section-title">
-                                        <h2>Achievements</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .row -->
-                            <a name="oracle_projects"></a>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="content-item">
-                                        <h3>Machine Learning Certification</h3>
-                                        <h4>Standford Online, Coursera
-                                            <small>2018</small>
-                                        </h4>
-                                        <p>
-                                            Most pouplar online Machine Learning course offered by standford online.
-                                            <br>
-                                            <a href="http://goo.gl/LkYofi" target="_blank">Link to Certificate</a>
-                                        </p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>Google India Challenge Scholarship - Android</h3>
-                                        <h4>Google, Udacity
-                                            <small>2018</small>
-                                        </h4>
-                                        <p>
-                                            Android Application Development Scholarship sponsored by Google over Udacity platform.
-                                        </p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>National Level Project Competition</h3>
-                                        <h4>IEEE, SCOE
-                                            <small>2016</small>
-                                        </h4>
-                                        <p>Won 1
-                                            <sup>st</sup> prize and a cash prize of Rs. 70000/- at National Level project competition
-                                            conducted under IEEE at SCOE, Khargar for ‘SmartGrid – An Android Application’.
-                                        </p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>Technical Paper Presentation</h3>
-                                        <h4>VJTI
-                                            <small>2016</small>
-                                        </h4>
-                                        <p>Won 1
-                                            <sup>st</sup> prize for Technical Paper Presentation at VJTI, Mumbai on topic ‘Gird
-                                            Computing in Smartphones’.
-                                        </p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>Summer Project Competition</h3>
-                                        <h4>FCRIT
-                                            <small>2014</small>
-                                        </h4>
-                                        <p>Won 1st prize for the project ‘College Intranet Android Application’.</p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>Project Exhibition Tech Expo</h3>
-                                        <h4>Trinity, D. J. Sanghavi COE, Mumbai
-                                            <small>2015</small>
-                                        </h4>
-                                        <p>Won 2nd prize for the project ‘School Bus Tracking’.</p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>National Entrepreneurship Challenge</h3>
-                                        <h4>E-cell, IIT-Bombay
-                                            <small>2014-2015</small>
-                                        </h4>
-                                        <p>Participated and successfully completed the NEC 2014-15 challenge organized by IIT-Bombay.</p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>E-Yantra Robotics Competition</h3>
-                                        <h4>IIT Bombay
-                                            <small>2013-2015</small>
-                                        </h4>
-                                        <p>Represented as a team leader and secured 5th place in the national robotics competition
-                                            (E-Yantra) conducted by IIT Bombay. It was a research and implementation based
-                                            competition scheduled for a span of 6-8 months with more than 6000 teams enrolled.</p>
-                                    </div>
-                                    <div class="content-item">
-                                        <h3>Android Application Development Workshop</h3>
-                                        <h4>CSI-Cyptex, FCRIT and Etamax FCRIT
-                                            <small>2013-2015</small>
-                                        </h4>
-                                        <p>Conducted Android Application Development workshop under CSI-Cryptex for students
-                                            of Computer Engineering Department and also in college technical festival.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .row -->
 
+                    <!-- Skills -->
+                    <section id="skills" class="section-wrapper gray-bg">
+                        <div class="container-fluid">
+                            <div class="section-title"><h2>Skills</h2></div>
+                            {% for g in site.data.skills %}
+                            <div class="skill-group">
+                                <h3>{{ g.group }}</h3>
+                                <div class="skill-tags">
+                                    {% for i in g.items %}<span class="skill-tag">{{ i }}</span>{% endfor %}
+                                </div>
+                            </div>
+                            {% endfor %}
                         </div>
                     </section>
-                    <section id="education" class="section-wrapper section-education">
+
+                    <!-- Writing -->
+                    <section id="writing" class="section-wrapper gray-bg">
                         <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="section-title">
-                                        <h2>Education</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="content-item">
-                                        <small>2023 - 2024</small>
-                                        <h3>Accelerated General Management Programme</h3>
-                                        <h4>IIM Ahmedabad</h4>
-
-                                        <p>This one-year programme has been designed specifically to equip working professionals with aspects of general management in a global business environment. This programme comprises of functions of business management as well as contemporary and new age topics which will enable participants to broaden their business perspective and develop on tools and techniques required for managing today's businesses.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--.row-->
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="content-item">
-                                        <small>2012 - 2016</small>
-                                        <h3>B. E. Computer Science and Engineering</h3>
-                                        <h4>Mumbai University</h4>
-
-                                        <p>8.09 CGPA</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--.row-->
-                        </div>
-                        <!-- .container-fluid -->
-
-                    </section>
-                    <!-- .section-education -->
-                    <section id="portfolio" class="section-wrapper portfolio-section">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="section-title">
-                                        <h2>Portfolio</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <a class="portfolio-item" href="https://play.google.com/store/apps/details?id=com.smartgrid.smartgrid_app" target="_blank">
-                                        <div class="portfolio-thumb">
-                                            <img src="img/portfolio_smartgrid.jpg" alt="">
-                                        </div>
-
-                                        <div class="portfolio-info">
-                                            <h3>SmartGrid</h3>
-                                            <small>Android Application</small>
-                                        </div>
-                                        <!-- portfolio-info -->
+                            <div class="section-title"><h2>Writing</h2></div>
+                            {% if site.posts.size == 0 %}
+                            <p>Posts coming soon.</p>
+                            {% else %}
+                            <ul class="writing-list">
+                                {% for post in site.posts limit:3 %}
+                                <li class="writing-item">
+                                    {% if post.image %}
+                                    <a class="writing-thumb" href="{{ post.url | relative_url }}">
+                                        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
                                     </a>
-                                    <!-- .portfolio-item -->
-                                </div>
-                                <div class="col-md-6">
-                                    <a class="portfolio-item" href="https://play.google.com/store/apps/details?id=com.vishalan.koinex" target="_blank">
-                                        <div class="portfolio-thumb">
-                                            <img src="img/portfolio_koinex.jpg" alt="">
-                                        </div>
-
-                                        <div class="portfolio-info">
-                                            <h3>Koinex Monitor</h3>
-                                            <small>Android Application</small>
-                                        </div>
-                                        <!-- portfolio-info -->
-                                    </a>
-                                    <!-- .portfolio-item -->
-                                </div>
-                                <div class="col-md-6">
-                                    <a class="portfolio-item" href="http://goo.gl/MGhNST" target="_blank">
-                                        <div class="portfolio-thumb">
-                                            <img src="img/portfolio_eyantra2.jpg" alt="">
-                                        </div>
-
-                                        <div class="portfolio-info">
-                                            <h3>Eyantra 2014</h3>
-                                            <small>Weed Plucking Robot</small>
-                                        </div>
-                                        <!-- portfolio-info -->
-                                    </a>
-                                    <!-- .portfolio-item -->
-                                </div>
-                                <div class="col-md-6">
-                                    <a class="portfolio-item" href="http://goo.gl/A56MNU" target="_blank">
-                                        <div class="portfolio-thumb">
-                                            <img src="img/portfolio_eyantra1.jpg" alt="">
-                                        </div>
-
-                                        <div class="portfolio-info">
-                                            <h3>Eyantra 2015</h3>
-                                            <small>Cargo Alignment Robot</small>
-                                        </div>
-                                        <!-- portfolio-info -->
-                                    </a>
-                                    <!-- .portfolio-item -->
-                                </div>
-                                <div class="col-md-6">
-                                    <a class="portfolio-item" href="https://play.google.com/store/apps/details?id=homely.mangorevolutions.com.homelynow" target="_blank">
-                                        <div class="portfolio-thumb">
-                                            <img src="img/portfolio_homely.jpg" alt="">
-                                        </div>
-
-                                        <div class="portfolio-info">
-                                            <h3>Homely for Yummaker</h3>
-                                            <small>Android Application</small>
-                                        </div>
-                                        <!-- portfolio-info -->
-                                    </a>
-                                    <!-- .portfolio-item -->
-                                </div>
-                                <div class="col-md-6">
-                                    <a class="portfolio-item" href="https://www.mangorevolutions.com" target="_blank">
-                                        <div class="portfolio-thumb">
-                                            <img src="img/portfolio_homely_website.jpg" alt="">
-                                        </div>
-
-                                        <div class="portfolio-info">
-                                            <h3>Homely</h3>
-                                            <small>Website</small>
-                                        </div>
-                                        <!-- portfolio-info -->
-                                    </a>
-                                    <!-- .portfolio-item -->
-                                </div>
-
-                            </div>
-                            <!-- /.row -->
+                                    {% endif %}
+                                    <div class="writing-body">
+                                        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                                        <p class="writing-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+                                        <p>{{ post.description | default: post.excerpt | strip_html | truncatewords: 28 }}</p>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                            <p><a href="{{ '/blog/' | relative_url }}">Read the blog &rarr;</a></p>
+                            {% endif %}
                         </div>
                     </section>
-                    <!-- .portfolio -->
 
+                    <!-- Education & certifications -->
+                    <section id="education" class="section-wrapper">
+                        <div class="container-fluid">
+                            <div class="section-title"><h2>Education &amp; certifications</h2></div>
+                            <div class="content-item">
+                                <small>2023 – 2024</small>
+                                <h3>Accelerated General Management Programme</h3>
+                                <h4>IIM Ahmedabad</h4>
+                                <p>A one-year programme for working professionals covering the functions of business management plus contemporary, new-age topics &mdash; broadening the business perspective and the tools and techniques for managing modern businesses.</p>
+                            </div>
+                            <div class="content-item">
+                                <small>2012 – 2016</small>
+                                <h3>B.E., Computer Science &amp; Engineering</h3>
+                                <h4>University of Mumbai</h4>
+                                <p>8.09 CGPA.</p>
+                            </div>
+                            <div class="content-item">
+                                <small>2018</small>
+                                <h3>Machine Learning</h3>
+                                <h4>Stanford Online, Coursera</h4>
+                                <p>The widely-taken Machine Learning course from Stanford Online. <a href="http://goo.gl/LkYofi" target="_blank" rel="noopener">Certificate</a>.</p>
+                            </div>
+                            <div class="content-item">
+                                <small>2018</small>
+                                <h3>Google India Challenge Scholarship &mdash; Android</h3>
+                                <h4>Google · Udacity</h4>
+                                <p>Android development scholarship sponsored by Google on the Udacity platform.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Earlier work (collapsed) -->
+                    <section id="earlier" class="section-wrapper gray-bg">
+                        <div class="container-fluid">
+                            <div class="section-title"><h2>Earlier work</h2></div>
+                            <details class="earlier-work">
+                                <summary>Startups, college projects &amp; shipped apps (2013 – 2018)</summary>
+                                <div class="earlier-body">
+                                    <div class="content-item">
+                                        <h3>Homely</h3>
+                                        <p>Software intern at a growing food startup (2016). Built an Android app for order tracking, product management, analytics and billing, and the company's single-page site. <a href="https://play.google.com/store/apps/details?id=homely.mangorevolutions.com.homelynow" target="_blank" rel="noopener">Play Store</a>.</p>
+                                    </div>
+                                    <div class="content-item">
+                                        <h3>SmartGrid &mdash; Android app</h3>
+                                        <p>Final-year project: a messenger that pools the compute of phones on a wireless grid to solve a shared problem faster. Won 1st prize (₹70,000) at a national IEEE project competition. <a href="https://play.google.com/store/apps/details?id=com.smartgrid.smartgrid_app" target="_blank" rel="noopener">Play Store</a>.</p>
+                                    </div>
+                                    <div class="content-item">
+                                        <h3>Koinex Monitor &mdash; Android app</h3>
+                                        <p>Price monitoring and alerts for the Koinex crypto exchange. <a href="http://play.google.com/store/apps/details?id=com.vishalan.koinex" target="_blank" rel="noopener">Play Store</a>.</p>
+                                    </div>
+                                    <div class="content-item">
+                                        <h3>E-Yantra Robotics (IIT Bombay)</h3>
+                                        <p>Team leader; 5th nationally across 6,000+ teams in a research-and-build robotics competition &mdash; a cargo-alignment robot and a weed-plucking robot.</p>
+                                    </div>
+                                    <div class="content-item">
+                                        <h3>CSI-Cryptex &amp; E-Cell, FCRIT</h3>
+                                        <p>President of the CSI-Cryptex workshop committee and operations head of the college Entrepreneurship Cell (2014–2015); ran Android development workshops.</p>
+                                    </div>
+                                    <div class="content-item">
+                                        <h3>StupidSid</h3>
+                                        <p>Recognised technical content writer for the student resource site stupidsid.com (2015).</p>
+                                    </div>
+                                    <div class="content-item">
+                                        <h3>More projects</h3>
+                                        <p>School-bus tracking app, a college intranet app and site, and mindassets.in &mdash; a job portal for differently-abled individuals.</p>
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+                    </section>
+
+                    <!-- Contact -->
                     <section id="contact" class="section-contact section-wrapper gray-bg">
                         <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="section-title">
-                                        <h2>Contact</h2>
-                                    </div>
-                                </div>
+                            <div class="section-title"><h2>Contact</h2></div>
+                            <div class="contact-lines">
+                                <address>
+                                    <strong>Location</strong><br>
+                                    Mumbai, India
+                                </address>
+                                <address>
+                                    <strong>Email</strong><br>
+                                    <a href="mailto:vishalangharat@gmail.com">vishalangharat@gmail.com</a>
+                                </address>
                             </div>
-                            <!--.row-->
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <address>
-                                        <strong>Address</strong>
-                                        <br> C/3, 2nd Floor, Hemleela C.H.S.,
-                                        <br> M. P. Road, Mulund East,
-                                        <br> Mumbai - 400081, Maharashtra, India
-
-                                    </address>
-
-                                    <address>
-                                        <strong>Mobile Number</strong>
-                                        <br> +91 8898741571
-                                    </address>
-
-
-                                    <address>
-                                        <strong>Email</strong>
-                                        <br>
-                                        <a href="mailto:#">vishalan.gharat@gmail.com</a>
-                                    </address>
-                                </div>
-                            </div>
-                            <!--.row-->
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="feedback-form">
-                                        <h2>Get in touch</h2>
-
-                                        <form id="contactForm" action="https://docs.google.com/forms/d/e/1FAIpQLScNmY_zfjhp8u8IJLzpeUu-9v-vMzObFZVgKEd0ee6sE_6EDA/formResponse">
-                                            <div class="form-group">
-                                                <label for="InputName">Name</label>
-                                                <input type="text" name="entry.81138676" required="" class="form-control" id="InputName" placeholder="Full Name">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="InputPhone">Phone Number</label>
-                                                <input type="phone" name="entry.565311856" required="" class="form-control" id="InputPhone" placeholder="Phone Number">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="InputEmail">Email address</label>
-                                                <input type="email" name="entry.818547279" required="" class="form-control" id="InputEmail" placeholder="Email">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="InputSubject">Subject</label>
-                                                <input type="text" name="entry.1882688918" class="form-control" id="InputSubject" placeholder="Subject">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="message-text" class="control-label">Message</label>
-                                                <textarea class="form-control" rows="4" required="" name="entry.938171217" id="message-text" placeholder="Write message"></textarea>
-                                            </div>
-
-                                            <button type="submit" class="btn btn-primary">Submit</button>
-                                        </form>
+                            <div class="feedback-form">
+                                <h2>Get in touch</h2>
+                                <form id="contactForm" action="https://docs.google.com/forms/d/e/1FAIpQLScNmY_zfjhp8u8IJLzpeUu-9v-vMzObFZVgKEd0ee6sE_6EDA/formResponse">
+                                    <div class="form-group">
+                                        <label for="InputName">Name</label>
+                                        <input type="text" name="entry.81138676" required="" class="form-control" id="InputName" placeholder="Full Name">
                                     </div>
-                                    <!-- .feedback-form -->
-
-
-                                </div>
+                                    <div class="form-group">
+                                        <label for="InputPhone">Phone Number</label>
+                                        <input type="phone" name="entry.565311856" class="form-control" id="InputPhone" placeholder="Phone Number">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="InputEmail">Email address</label>
+                                        <input type="email" name="entry.818547279" required="" class="form-control" id="InputEmail" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="InputSubject">Subject</label>
+                                        <input type="text" name="entry.1882688918" class="form-control" id="InputSubject" placeholder="Subject">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message-text" class="control-label">Message</label>
+                                        <textarea class="form-control" rows="4" required="" name="entry.938171217" id="message-text" placeholder="Write message"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
                             </div>
                         </div>
-                        <!--.container-fluid-->
                     </section>
                     <!--.section-contact-->
 
@@ -894,16 +373,11 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <div class="copytext">&copy; Designed and Maintained with Love by :
-                                            <a href="#">Vishalan</a>
-                                        </div>
+                                        <div class="copytext">&copy; {{ 'now' | date: "%Y" }} Vishalan Gharat</div>
                                     </div>
                                 </div>
-                                <!--.row-->
                             </div>
-                            <!-- .container-fluid -->
                         </div>
-                        <!-- .copyright-section -->
                     </footer>
                     <!-- .footer -->
                 </div>
@@ -916,12 +390,12 @@
     <!-- #main-wrapper -->
 
     <!-- jquery -->
-    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="{{ '/js/jquery-2.1.4.min.js' | relative_url }}"></script>
 
     <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/theia-sticky-sidebar.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="{{ '/js/bootstrap.min.js' | relative_url }}"></script>
+    <script src="{{ '/js/theia-sticky-sidebar.js' | relative_url }}"></script>
+    <script src="{{ '/js/scripts.js' | relative_url }}"></script>
 </body>
 
 </html>

@@ -1,0 +1,13 @@
+# Grouped skills — Appendix C. Rendered as plain tags, no progress bars.
+- group: LLM apps & agents
+  items: [LLMs, Agentic workflows, Tool calling, MCP, RAG, Embeddings / pgvector, Multimodal models, Prompt engineering, Browser agents]
+- group: Evaluation & LLMOps
+  items: [Eval testbeds, Model bake-offs, Canary rollouts, Guardrails, Prompt tracing, Provider fallback, Cost & latency optimization]
+- group: Models & platforms
+  items: [Anthropic Claude, OpenAI, Google Gemini / Vertex AI, AWS Bedrock, Azure OpenAI, Open-weight SLMs]
+- group: AI governance & security
+  items: [ISO/IEC 42001, SOC 2, OWASP LLM & MCP Top 10, Zero Trust, AI risk assessment, Data residency]
+- group: Engineering
+  items: [Python, Java, JavaScript / Node.js, Ruby on Rails, Spring Boot, AWS, Kubernetes, Kafka, Redis, MySQL, PostgreSQL, Apache Ignite, WebRTC]
+- group: Leadership
+  items: [AI strategy, Org design & scaling, Hiring, OKRs, LLM budget & vendor strategy, AI-assisted engineering]

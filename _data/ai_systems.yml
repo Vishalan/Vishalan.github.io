@@ -1,0 +1,51 @@
+# Selected AI systems — card copy from Appendix B.
+# Confidentiality: no customer names, no absolute money figures, team credit per §5.
+# NOTE: Percy "ARR more than doubled" chip intentionally omitted pending sign-off (Q1).
+- title: Percy Visual Review Agent
+  problem: Visual regression testing buried teams in diffs that each needed a human to triage.
+  did:
+    - I owned the lane; my team built a multimodal LLM agent that classifies and explains visual diffs.
+    - Ran an eval-driven model bake-off — 82% coverage / 85% accuracy for the chosen model, against 76% / 75%.
+    - Drove a 10% → 100% canary rollout and a provider re-platforming.
+  outcomes:
+    - GA Oct 2025
+    - Inference cost ↓ ~75–90%
+    - Adoption 86% → 91%
+    - Consistency 50% → 89%
+- title: Low-Code Automation Browser Agent
+  problem: Natural-language web test automation that stays stable as the web under it changes.
+  did:
+    - Drove the pivot to a visually grounded agent built on the open-source Magnitude framework.
+    - Validated on an internal testbed scored with LLM-as-judge.
+  outcomes:
+    - Step stability 85–87% → 98%
+    - First-action latency 25s → 14s
+    - 3-month retention 61% → 79%
+    - India data residency
+- title: AI Engine — agent intelligence layer
+  problem: Six product surfaces were each reinventing inference loops, guardrails, memory and model access.
+  did:
+    - Set the mandate by benchmarking the two existing pipelines — 82% vs 69% recording accuracy, a ~7× gap in P90 cost per test.
+    - A code review found five model-access paths with only one governed — the case for a single governed layer.
+    - Launched Aug 2026 as a shared inference loop, guardrails, memory, a model-agnostic gateway and an SDK.
+  outcomes:
+    - Launched Aug 2026
+    - Serves 6 product surfaces
+  note: The accuracy and cost figures above are pre-engine benchmarks that set the mandate, not engine results.
+- title: BrowserStack MCP Server
+  problem: Let any AI assistant drive BrowserStack's tools directly.
+  did:
+    - My team shipped 5 tools in a week, then grew it to 18+ tools across 4 products.
+    - Remote MCP with OAuth and one-click install, across 25+ SDK setup permutations.
+  outcomes:
+    - 18+ tools, 4 products
+    - ~75% of code AI-generated
+- title: Test Management AI
+  problem: Pick the tests actually worth running, and turn PRDs into test cases.
+  did:
+    - Semantic test selection — embeddings + pgvector and a weighted rule engine, shipped as a Jira app (company patent filing).
+    - An eval-first PRD-to-test-case pipeline.
+  outcomes:
+    - Coverage 83.4% → 90.4%
+    - Shipped Oct 2024
+    - Patent filed
