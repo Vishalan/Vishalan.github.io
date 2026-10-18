@@ -20,7 +20,52 @@
     line-height: 1.5;
     color: #666;
     font-weight: 300;
-    margin: -6px 0 14px;
+    margin: 2px 0 16px;
+}
+
+/* Headings use Space Grotesk, matching the homepage */
+.blog-page .section-title h2,
+.post-title,
+.post-content h2,
+.post-content h3,
+.post-list h3,
+.post-card-body h3 {
+    font-family: 'Space Grotesk', 'Hind', sans-serif;
+    letter-spacing: -0.01em;
+}
+
+/* Listing / section header: ink + an amber tick, not faint grey */
+.blog-page .section-title h2 {
+    color: #1c1c28;
+    font-weight: 600;
+}
+
+.blog-page .section-title h2::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-top: 11px;
+    background: #ffc107;
+    border-radius: 2px;
+}
+
+/* Post title: a proper article heading */
+.post-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #1c1c28;
+    line-height: 1.25;
+    margin: 0 0 10px;
+}
+
+/* Inline code: neutral ink, not Bootstrap's pink-red */
+.post-content code {
+    color: #1c1c28;
+}
+
+.post-content pre code {
+    color: inherit;
 }
 
 .post-meta {
@@ -273,4 +318,13 @@
     .navbar-default .navbar-nav > li.nav-cta > a.nav-btn {
         margin: 6px 15px;
     }
+}
+
+/* Active nav link: an amber underline, not a grey box */
+.navbar-default .navbar-nav > .active:not(.nav-cta) > a,
+.navbar-default .navbar-nav > .active:not(.nav-cta) > a:hover,
+.navbar-default .navbar-nav > .active:not(.nav-cta) > a:focus {
+    background: transparent;
+    color: #1c1c28;
+    box-shadow: inset 0 -2px 0 #ffc107;
 }
