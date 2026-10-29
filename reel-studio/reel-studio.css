@@ -149,9 +149,9 @@ s { text-decoration-thickness: 2px; }
 .prompt {
   font: 500 15px/1.4 ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
   background: var(--ink); color: var(--paper);
-  padding: 12px 14px; margin: 0 18px -2px;
+  padding: 12px 14px; margin: 0 6px -2px;
   border: 2.5px solid var(--ink);
-  white-space: nowrap; overflow: hidden;
+  font-size: clamp(12px, 3.6vw, 14px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .prompt .caret { color: var(--hot); }
 .phone {
