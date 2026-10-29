@@ -3,7 +3,10 @@
 // no-JS fallback; this script rewrites them from GUMROAD_URL on load.
 const GUMROAD_URL = "https://vishalan.gumroad.com/l/reel-studio/launch";
 
-const LEAD_ENDPOINT = "https://formsubmit.co/ajax/reach.vishalan.ai@gmail.com";
+// Leads land in the "Reel Studio leads" Google Form (and its responses sheet) in the
+// reach.vishalan.ai account. FormSubmit was down (HTTP 521) on launch day.
+const LEAD_ENDPOINT = "https://docs.google.com/forms/d/e/1FAIpQLSciGROrhbEgYSox3P3p6ltBkW5ux-HbK0PzmOSJZJ97wTyJxQ/formResponse";
+const LEAD_FIELDS = { email: "entry.1517726801", source: "entry.1259510934" };
 const LEAD_TIMEOUT_MS = 3000;
 
 (function () {
@@ -102,13 +105,12 @@ const LEAD_TIMEOUT_MS = 3000;
     go.disabled = true;
     go.textContent = "Opening checkout...";
 
-    var payload = Object.assign({
-      email: value,
-      _subject: "Reel Studio lead",
-      _template: "table",
-      source: window.location.origin + window.location.pathname,
-      timestamp: new Date().toISOString()
-    }, utmParams());
+    // Source plus any utm_* tags in one field, for retargeting audiences later.
+    var tags = utmParams();
+    var source = [window.location.pathname].concat(Object.keys(tags).map(function (k) { return k + "=" + tags[k]; })).join(" | ");
+    var body = new URLSearchParams();
+    body.set(LEAD_FIELDS.email, value);
+    body.set(LEAD_FIELDS.source, source);
 
     var controller = typeof AbortController === "function" ? new AbortController() : null;
     var finished = false;
@@ -126,8 +128,9 @@ const LEAD_TIMEOUT_MS = 3000;
     try {
       fetch(LEAD_ENDPOINT, {
         method: "POST",
-        headers: { "Content-Type": "application/json", "Accept": "application/json" },
-        body: JSON.stringify(payload),
+        mode: "no-cors",
+        keepalive: true,
+        body: body,
         signal: controller ? controller.signal : undefined
       }).catch(function () { /* ignore, we redirect anyway */ })
         .then(function () { clearTimeout(timer); finish(); });
