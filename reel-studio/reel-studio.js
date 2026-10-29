@@ -1,7 +1,7 @@
 // Reel Studio sales page: email step, then Gumroad checkout.
 // The checkout link lives here only. The plain hrefs in the HTML are the
 // no-JS fallback; this script rewrites them from GUMROAD_URL on load.
-const GUMROAD_URL = "https://vishalan.gumroad.com/l/reel-studio";
+const GUMROAD_URL = "https://vishalan.gumroad.com/l/reel-studio/launch";
 
 const LEAD_ENDPOINT = "https://formsubmit.co/ajax/reach.vishalan.ai@gmail.com";
 const LEAD_TIMEOUT_MS = 3000;
